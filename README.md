@@ -1,5 +1,5 @@
 # WPF_RestAPI_Test
-This is a project on  to sync data from REST API into your LocalDB using WPF application.
+This is a simple project to sync data from REST API into your LocalDB using WPF application.
 
 Listed below is the tools that are used for this development:
 - Microsoft Visual Studio Community 2019 (Version 16.8.4)
