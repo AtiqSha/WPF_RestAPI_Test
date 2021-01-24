@@ -1,0 +1,38 @@
+﻿<Window x:Name="loginWin" x:Class="AEM_Test.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AEM_Test"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.504,1.5" StartPoint="0.504,0.03">
+                <GradientStop Color="#1261A0" Offset="0"/>
+                <GradientStop Color="#99fadc" Offset="0.567"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Center" VerticalAlignment="Center">
+            
+            <Grid MinWidth="300">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="3*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Username " FontFamily="Adobe Heiti Std R" FontSize="14"/>
+                <TextBox x:Name="username_txt"  Grid.Column="1" Margin="0,0,0,0" Text="" TextWrapping="Wrap" FontSize="14" FontFamily="Courier New" VerticalContentAlignment="Center"/>
+                <TextBlock Text="Password " Grid.Row="1" Margin="0,10,0,0" FontFamily="Adobe Heiti Std R" FontSize="14"/>
+                <PasswordBox x:Name="password_txt" Password="" PasswordChar="•" Grid.Column="1" Grid.Row="1" Margin="0,10,0,0" FontSize="14" FontFamily="Courier New" VerticalContentAlignment="Center"/>
+            </Grid>
+            <Button Content="Login" Width="100" Height="30" Margin="0,30,0,0" FontFamily="Adobe Heiti Std R" FontSize="14" Click="Button_Click"/>
+
+        </StackPanel>
+
+
+    </Grid>
+</Window>
